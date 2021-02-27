@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.header {
+    grid-column: 1 / 10;
+    background-color: red;
+}
+.cards {
+    background-color: orange;
+    grid-column: 1 / 10;
+}
+.footer {
+    grid-column: 1 / 10;
+    background-color: yellow;
+}
+.instructions-container {
+    grid-column: 10 / -1;
+    background-color: green;
+}

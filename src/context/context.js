@@ -3,23 +3,21 @@ const context = React.createContext();
 function ContextProvider({ children }) {
   const [cards, setCards] = useState([]);
   const [isSorted, setIsSorted] = useState(false);
-  function handleAddCard(e) {
+
+  async function handleAddCard(e) {
     setIsSorted(false);
-    const randomNumber = Math.floor(Math.random() * 100);
-    console.log(randomNumber);
-    console.log('add another card');
+    const response = await fetch(
+      'https://thingproxy.freeboard.io/fetch/http://www.randomnumberapi.com/api/v1.0/random?min=0&max=100&count=1'
+    );
+    const randomNumber = await response.json();
     setCards((prevState) => [...prevState, randomNumber]);
-    console.log(cards);
   }
 
-  function handleDeleteCard(e) {
-    console.log('card delete');
-  }
+  function handleDeleteCard(e) {}
   function handleSortCard(e) {
     let sortedCards = cards.sort((a, b) => a - b);
     setCards(sortedCards);
     setIsSorted(true);
-    console.log(cards);
   }
   return (
     <context.Provider
