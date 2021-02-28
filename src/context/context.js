@@ -10,10 +10,18 @@ function ContextProvider({ children }) {
       'https://thingproxy.freeboard.io/fetch/http://www.randomnumberapi.com/api/v1.0/random?min=0&max=100&count=1'
     );
     const randomNumber = await response.json();
-    setCards((prevState) => [...prevState, randomNumber]);
+
+    setCards((prevState) => [...prevState, randomNumber[0]]);
   }
 
-  function handleDeleteCard(e) {}
+  function handleDeleteCard(e, props) {
+    let array = [...cards];
+    let index = array.indexOf(props.card);
+
+    array.splice(index, 1);
+    setCards(array);
+    console.log(cards);
+  }
   function handleSortCard(e) {
     let sortedCards = cards.sort((a, b) => a - b);
     setCards(sortedCards);

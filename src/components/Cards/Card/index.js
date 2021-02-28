@@ -1,11 +1,15 @@
 import React, { useContext } from 'react';
 import { context } from '../../../context/context';
-function Card({ card }) {
+function Card(props) {
+  console.log('props ', props);
   const { handleDeleteCard } = useContext(context);
 
   return (
     <div className='card'>
-      {card} <button onClick={handleDeleteCard}>X</button>
+      {props.card}
+      <button onClick={(e) => handleDeleteCard(e, props)} className='btn'>
+        x
+      </button>
     </div>
   );
 }
