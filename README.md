@@ -1,6 +1,6 @@
  <h3 align="center">Blue Owl Coding Challenge</h3>
  
-![Project Name](gif/demo.gif)
+![Project Name](gif/gif.gif)
 
 <!-- PROJECT LOGO -->
 <br />
