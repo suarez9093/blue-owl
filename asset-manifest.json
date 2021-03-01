@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/blue-owl/static/css/main.e5b28dcc.chunk.css",
+    "main.js": "/blue-owl/static/js/main.101f9ffa.chunk.js",
+    "main.js.map": "/blue-owl/static/js/main.101f9ffa.chunk.js.map",
+    "runtime-main.js": "/blue-owl/static/js/runtime-main.99316d82.js",
+    "runtime-main.js.map": "/blue-owl/static/js/runtime-main.99316d82.js.map",
+    "static/js/2.2e547056.chunk.js": "/blue-owl/static/js/2.2e547056.chunk.js",
+    "static/js/2.2e547056.chunk.js.map": "/blue-owl/static/js/2.2e547056.chunk.js.map",
+    "index.html": "/blue-owl/index.html",
+    "static/css/main.e5b28dcc.chunk.css.map": "/blue-owl/static/css/main.e5b28dcc.chunk.css.map",
+    "static/js/2.2e547056.chunk.js.LICENSE.txt": "/blue-owl/static/js/2.2e547056.chunk.js.LICENSE.txt",
+    "static/media/pic.6e66a029.jpg": "/blue-owl/static/media/pic.6e66a029.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.99316d82.js",
+    "static/js/2.2e547056.chunk.js",
+    "static/css/main.e5b28dcc.chunk.css",
+    "static/js/main.101f9ffa.chunk.js"
+  ]
+}
