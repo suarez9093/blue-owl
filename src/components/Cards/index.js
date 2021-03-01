@@ -7,7 +7,8 @@ function Cards() {
 
   return (
     <div className='cards'>
-      {isSorted && cards.map((card, index) => <Card key={index} card={card} />)}
+      {isSorted &&
+        cards.map((card, index) => <Card id={index} key={index} card={card} />)}
       {!isSorted &&
         cards.map((card, index) => <Card id={index} key={index} card={card} />)}
     </div>

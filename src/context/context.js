@@ -16,12 +16,10 @@ function ContextProvider({ children }) {
 
   function handleDeleteCard(e, props) {
     let array = [...cards];
-    let index = array.indexOf(props.card);
-
-    array.splice(index, 1);
+    array.splice(props.id, 1);
     setCards(array);
-    console.log(cards);
   }
+
   function handleSortCard(e) {
     let sortedCards = cards.sort((a, b) => a - b);
     setCards(sortedCards);

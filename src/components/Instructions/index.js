@@ -3,6 +3,7 @@ import image from './pic.jpg';
 function Instructions() {
   return (
     <div className='instructions-container'>
+      <img className='instructions-image' src={image} alt='instructions' />
       <p className='instructions'>
         Please create a responsive React application (using javascript or
         typescript) that displays a list of cards on a page as shown below.
@@ -27,7 +28,6 @@ function Instructions() {
         the top of the page, please sort the cards in order of the number that
         is shown in the center of each card.
       </p>
-      <img className='instructions-image' src={image} alt='instructions' />
     </div>
   );
 }
