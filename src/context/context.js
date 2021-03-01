@@ -7,16 +7,14 @@ function ContextProvider({ children }) {
   async function handleAddCard(e) {
     try {
       setIsSorted(false);
-
       const proxy = 'https://thingproxy.freeboard.io/fetch/';
       const response = await fetch(
-        proxy +
-          'http://www.randomnumberapi.com/api/v1.0/random?min=0&max=100&count=1'
+        'https://www.random.org/integers/?num=1&min=0&max=100&col=1&base=10&format=plain&rnd=new'
       );
 
       const randomNumber = await response.json();
 
-      setCards((prevState) => [...prevState, randomNumber[0]]);
+      setCards((prevState) => [...prevState, randomNumber]);
     } catch (err) {
       console.error(err);
     }
