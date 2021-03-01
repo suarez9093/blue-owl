@@ -6,8 +6,9 @@ function ContextProvider({ children }) {
 
   async function handleAddCard(e) {
     setIsSorted(false);
+    // const proxy = 'https://thingproxy.freeboard.io/fetch/http://';
     const response = await fetch(
-      'https://thingproxy.freeboard.io/fetch/http://www.randomnumberapi.com/api/v1.0/random?min=0&max=100&count=1'
+      'www.randomnumberapi.com/api/v1.0/random?min=0&max=100&count=1'
     );
     const randomNumber = await response.json();
 
