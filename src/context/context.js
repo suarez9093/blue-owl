@@ -5,14 +5,20 @@ function ContextProvider({ children }) {
   const [isSorted, setIsSorted] = useState(false);
 
   async function handleAddCard(e) {
-    setIsSorted(false);
-    // const proxy = 'https://thingproxy.freeboard.io/fetch/http://';
-    const response = await fetch(
-      'www.randomnumberapi.com/api/v1.0/random?min=0&max=100&count=1'
-    );
-    const randomNumber = await response.json();
+    try {
+      setIsSorted(false);
 
-    setCards((prevState) => [...prevState, randomNumber[0]]);
+      // const proxy = 'https://thingproxy.freeboard.io/fetch/http://';
+      const response = await fetch(
+        'http://www.randomnumberapi.com/api/v1.0/random?min=0&max=100&count=1'
+      );
+
+      const randomNumber = await response.json();
+
+      setCards((prevState) => [...prevState, randomNumber[0]]);
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   function handleDeleteCard(e, props) {
