@@ -10,7 +10,7 @@ function ContextProvider({ children }) {
 
       // const proxy = 'https://thingproxy.freeboard.io/fetch/http://';
       const response = await fetch(
-        'http://www.randomnumberapi.com/api/v1.0/random?min=0&max=100&count=1'
+        'https://www.randomnumberapi.com/api/v1.0/random?min=0&max=100&count=1'
       );
 
       const randomNumber = await response.json();
