@@ -8,9 +8,10 @@ function ContextProvider({ children }) {
     try {
       setIsSorted(false);
 
-      // const proxy = 'https://thingproxy.freeboard.io/fetch/http://';
+      const proxy = 'https://thingproxy.freeboard.io/fetch/';
       const response = await fetch(
-        'https://www.randomnumberapi.com/api/v1.0/random?min=0&max=100&count=1'
+        proxy +
+          'http://www.randomnumberapi.com/api/v1.0/random?min=0&max=100&count=1'
       );
 
       const randomNumber = await response.json();
