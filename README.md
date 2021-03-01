@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+ <h3 align="center">Blue Owl Coding Challenge</h3>
+ 
+![Project Name](gif/demo.gif)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  
+  </a>
+  <p align="center">
+   Blue owl coding challenge
+    <br />
+    <br />
+    <a href="https://suarez9093.github.io/blue-owl/">View live Demo</a>
+  </p>
+</p>
 
-## Available Scripts
+### Description
 
-In the project directory, you can run:
+<p align="center">
+Please create a responsive React application (using javascript or
+        typescript) that displays a list of cards on a page as shown below.
+        There is a fixed-width pane on the right side of the window that remains
+        attached to the right side when the user re-sizes. Inside the pane,
+        please paste a formatted display of these instructions. And if the
+        browser width is small, hide the pane completely. There is a
+        fixed-height toolbar on the top of the window that has buttons. There is
+        a fixed-height footer on the bottom of the window that just shows the
+        text "footer". The main center portion of the window is the card
+        container. It should start out with zero cards. Cards are only added
+        when the user clicks 'add card' in the top toolbar. It has a vertical
+        scrollbar which can be used if there are too many cards to display at
+        once. It lays out the cards in rows, wrapping as needed. In this mockup
+        only 2 cards are shown per row, but if the browser is wider, 3 or more
+        cards might fit in a row. If narrower, maybe only 1 card would be
+        visible. Each card has a set pixel size, such as 300px by 250px, but you
+        can decide what size you wish to use. Upon instantiation, a card should
+        be given a random number between 0 and 100 and display it in the center
+        of the card. Each card has a button in the top-right corner which can be
+        used to delete the card. If the user clicks the 'sort cards' button at
+        the top of the page, please sort the cards in order of the number that
+        is shown in the center of each card.
+</p>
 
-### `yarn start`
+### Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [React](https://reactjs.org/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- CONTACT -->
 
-### `yarn test`
+## Contact
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Alex Suarez - [LinkedIn](https://www.linkedin.com/in/alexsuarez9093/) - suarez9093@hotmail.com

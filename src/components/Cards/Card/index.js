@@ -6,9 +6,9 @@ function Card(props) {
   return (
     <div className='card'>
       {props.card}
-      {/* <button onClick={(e) => handleDeleteCard(e, props)} className='btn'>
+      <button onClick={(e) => handleDeleteCard(e, props)} className='btn'>
         x
-      </button> */}
+      </button>
     </div>
   );
 }
